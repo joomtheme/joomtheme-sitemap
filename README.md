@@ -49,7 +49,7 @@ Install the package ZIP, not the individual component or plugin ZIP, unless you 
 6. Click Rebuild Sitemap.
 7. Open your sitemap URL:
 
-   https://your-domain.com/sitemap.xml
+   Sitemap: https://your-domain.com/sitemap.xml
 
 ## Recommended robots.txt Entry
 

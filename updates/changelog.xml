@@ -1,1 +1,78 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+    <changelog>
+        <element>pkg_jtsitemap</element>
+        <type>package</type>
+        <version>1.0.7</version>
+        <fix>
+            <item>Prevented administrator and raw com_content fallback URLs from appearing in generated sitemap output.</item>
+            <item>Improved sitemap cache filtering so old invalid URLs are skipped before XML rendering.</item>
+        </fix>
+        <language>
+            <item>Updated English and Turkish administrator language files, including dashboard support copy.</item>
+            <item>Updated package and system plugin SYS language descriptions.</item>
+        </language>
+        <addition>
+            <item>Added dashboard support box with JoomTheme website and support email.</item>
+            <item>Added smart SEO priority handling for products, documentation, contact/about and policy pages.</item>
+            <item>Added default SEO exclusions for search, authentication, administrative and non-indexable output URLs.</item>
+            <item>Added Joomla update server and changelog metadata for JED-ready distribution.</item>
+        </addition>
+        <change>
+            <item>Package manifest now advertises the public update server and changelog URL.</item>
+        </change>
+        <note>
+            <item>After updating, purge the sitemap cache and rebuild the sitemap from the component dashboard.</item>
+        </note>
+    </changelog>
+    <changelog>
+        <element>com_jtsitemap</element>
+        <type>component</type>
+        <version>1.0.7</version>
+        <fix>
+            <item>Prevented administrator and raw com_content fallback URLs from appearing in generated sitemap output.</item>
+            <item>Improved sitemap cache filtering so old invalid URLs are skipped before XML rendering.</item>
+        </fix>
+        <language>
+            <item>Updated English and Turkish administrator language files, including dashboard support copy.</item>
+            <item>Updated package and system plugin SYS language descriptions.</item>
+        </language>
+        <addition>
+            <item>Added dashboard support box with JoomTheme website and support email.</item>
+            <item>Added smart SEO priority handling for products, documentation, contact/about and policy pages.</item>
+            <item>Added default SEO exclusions for search, authentication, administrative and non-indexable output URLs.</item>
+            <item>Added Joomla update server and changelog metadata for JED-ready distribution.</item>
+        </addition>
+        <change>
+            <item>Package manifest now advertises the public update server and changelog URL.</item>
+        </change>
+        <note>
+            <item>After updating, purge the sitemap cache and rebuild the sitemap from the component dashboard.</item>
+        </note>
+    </changelog>
+    <changelog>
+        <element>jtsitemap</element>
+        <type>plugin</type>
+        <version>1.0.7</version>
+        <fix>
+            <item>Prevented administrator and raw com_content fallback URLs from appearing in generated sitemap output.</item>
+            <item>Improved sitemap cache filtering so old invalid URLs are skipped before XML rendering.</item>
+        </fix>
+        <language>
+            <item>Updated English and Turkish administrator language files, including dashboard support copy.</item>
+            <item>Updated package and system plugin SYS language descriptions.</item>
+        </language>
+        <addition>
+            <item>Added dashboard support box with JoomTheme website and support email.</item>
+            <item>Added smart SEO priority handling for products, documentation, contact/about and policy pages.</item>
+            <item>Added default SEO exclusions for search, authentication, administrative and non-indexable output URLs.</item>
+            <item>Added Joomla update server and changelog metadata for JED-ready distribution.</item>
+        </addition>
+        <change>
+            <item>Package manifest now advertises the public update server and changelog URL.</item>
+        </change>
+        <note>
+            <item>After updating, purge the sitemap cache and rebuild the sitemap from the component dashboard.</item>
+        </note>
+    </changelog>
+</changelogs>

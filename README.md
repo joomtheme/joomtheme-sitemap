@@ -57,10 +57,6 @@ Add this line to your robots.txt file:
 
     Sitemap: https://your-domain.com/sitemap.xml
 
-For JoomTheme:
-
-    Sitemap: https://joomtheme.com/sitemap.xml
-
 ## Dashboard
 
 The component dashboard provides:

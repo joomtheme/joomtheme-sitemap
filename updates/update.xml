@@ -8,9 +8,9 @@
         <version>1.0.7</version>
         <infourl title="JoomTheme Sitemap">https://joomtheme.com</infourl>
         <downloads>
-            <downloadurl type="full" format="zip">https://joomtheme.com/downloads/jtsitemap/pkg_jtsitemap_1.0.7.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://github.com/joomtheme/joomtheme-sitemap/releases/download/v1.0.7/pkg_jtsitemap_1.0.7.zip</downloadurl>
         </downloads>
-        <changelogurl>https://joomtheme.com/updates/jtsitemap/changelog.xml</changelogurl>
+        <changelogurl>https://github.com/joomtheme/joomtheme-sitemap/blob/main/updates/changelog.xml</changelogurl>
         <tags>
             <tag>stable</tag>
         </tags>
@@ -20,7 +20,5 @@
         <php_minimum>8.3.0</php_minimum>
         <supported_databases mysql="8.0.13" mariadb="10.4" />
         <sha256>7dd6ea5f0a2f5116d83eeef4a6b79b70adc48c2a739e0d1ee8d3e0d85bfa24c5</sha256>
-        <sha384>94f72ae412e0bce4aac4dff373991eeab99a0d6dd4db2a73660a84783d28edb43a95989ce4670a802fa2be74bd840c53</sha384>
-        <sha512>3e76208ad4f4a2c9e52080c6917bc2294737ef6451110f18ed8815502b9c4d296732be6f5caa9724ac17a0626ffa04a34d51fce0726614bc6187cd77b47c614c</sha512>
     </update>
 </updates>

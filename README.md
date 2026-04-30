@@ -151,15 +151,15 @@ The package includes Joomla update server metadata.
 
 Update Server URL:
 
-    https://joomtheme.com/updates/jtsitemap/update.xml
+    https://github.com/joomtheme/joomtheme-sitemap/blob/main/updates/update.xml
 
 Changelog URL:
 
-    https://joomtheme.com/updates/jtsitemap/changelog.xml
+    https://github.com/joomtheme/joomtheme-sitemap/blob/main/updates/changelog.xml
 
 Download URL:
 
-    https://joomtheme.com/downloads/jtsitemap/pkg_jtsitemap_1.0.7.zip
+    https://github.com/joomtheme/joomtheme-sitemap/releases/download/v1.0.7/pkg_jtsitemap_1.0.7.zip
 
 ## Changelog
 

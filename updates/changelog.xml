@@ -3,7 +3,7 @@
     <changelog>
         <element>pkg_jtsitemap</element>
         <type>package</type>
-        <version>1.0.7</version>
+        <version>1.0.8</version>
         <fix>
             <item>Prevented administrator and raw com_content fallback URLs from appearing in generated sitemap output.</item>
             <item>Improved sitemap cache filtering so old invalid URLs are skipped before XML rendering.</item>

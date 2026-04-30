@@ -5,6 +5,7 @@
         <description>Joomla 6.1+ XML sitemap generator with dashboard scanner, physical sitemap writer, dynamic sitemap endpoint, smart SEO priorities, custom URL support and exclusion filters.</description>
         <element>pkg_jtsitemap</element>
         <type>package</type>
+        <client>site</client>
         <version>1.0.8</version>
         <infourl title="JoomTheme Sitemap">https://github.com/joomtheme/joomtheme-sitemap</infourl>
         <downloads>

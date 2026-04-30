@@ -10,7 +10,7 @@
         <downloads>
             <downloadurl type="full" format="zip">https://github.com/joomtheme/joomtheme-sitemap/releases/download/v1.0.7/pkg_jtsitemap_1.0.7.zip</downloadurl>
         </downloads>
-        <changelogurl>https://github.com/joomtheme/joomtheme-sitemap/blob/main/updates/changelog.xml</changelogurl>
+        <changelogurl>https://raw.githubusercontent.com/joomtheme/joomtheme-sitemap/main/updates/changelog.xml</changelogurl>
         <tags>
             <tag>stable</tag>
         </tags>
@@ -19,6 +19,6 @@
         <targetplatform name="joomla" version="6\.[0-9]+" />
         <php_minimum>8.3.0</php_minimum>
         <supported_databases mysql="8.0.13" mariadb="10.4" />
-        <sha256>7dd6ea5f0a2f5116d83eeef4a6b79b70adc48c2a739e0d1ee8d3e0d85bfa24c5</sha256>
+        <sha256>0ae11afa70f65a6ad245e2b1596e6faae86055f120dc61253635f51d560f045b</sha256>
     </update>
 </updates>

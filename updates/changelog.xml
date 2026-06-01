@@ -3,76 +3,79 @@
     <changelog>
         <element>pkg_jtsitemap</element>
         <type>package</type>
-        <version>1.0.8</version>
+        <version>1.0.12</version>
         <fix>
-            <item>Prevented administrator and raw com_content fallback URLs from appearing in generated sitemap output.</item>
-            <item>Improved sitemap cache filtering so old invalid URLs are skipped before XML rendering.</item>
+            <item>Fixed JED-ready visible extension naming across package, component and system plugin manifests.</item>
+            <item>Fixed missing package SYS language file warning for the en-GB language tag.</item>
+            <item>Reduced JAMSS false-positive risk by renaming the internal administrator permission check method.</item>
         </fix>
         <language>
-            <item>Updated English and Turkish administrator language files, including dashboard support copy.</item>
-            <item>Updated package and system plugin SYS language descriptions.</item>
+            <item>Updated English and Turkish language files with JT Sitemap naming.</item>
+            <item>Added package SYS language files for English and Turkish.</item>
+            <item>Improved administrator language strings and corrected English interface text.</item>
         </language>
         <addition>
-            <item>Added dashboard support box with JoomTheme website and support email.</item>
-            <item>Added smart SEO priority handling for products, documentation, contact/about and policy pages.</item>
-            <item>Added default SEO exclusions for search, authentication, administrative and non-indexable output URLs.</item>
-            <item>Added Joomla update server and changelog metadata for JED-ready distribution.</item>
+            <item>Added Joomla 6 compatible package installer script.</item>
+            <item>Added automatic activation for the System - JT Sitemap plugin after install or update.</item>
+            <item>Added component Permissions tab support through Joomla rules configuration.</item>
+            <item>Added ACL action descriptions for Configure ACL, Configure Options and Access Administration Interface.</item>
+            <item>Added schema placeholder for version 1.0.12.</item>
         </addition>
         <change>
-            <item>Package manifest now advertises the public update server and changelog URL.</item>
+            <item>Changed public extension labels to JT Sitemap, JT Sitemap Package and System - JT Sitemap.</item>
+            <item>Updated manifest creationDate values to ISO date format.</item>
+            <item>Prepared update metadata for the 1.0.12 JED-ready package release.</item>
         </change>
         <note>
-            <item>After updating, purge the sitemap cache and rebuild the sitemap from the component dashboard.</item>
+            <item>After updating, open the JT Sitemap dashboard and rebuild the sitemap.</item>
+            <item>The system plugin is enabled automatically after package installation or update.</item>
         </note>
     </changelog>
     <changelog>
         <element>com_jtsitemap</element>
         <type>component</type>
-        <version>1.0.7</version>
+        <version>1.0.12</version>
         <fix>
-            <item>Prevented administrator and raw com_content fallback URLs from appearing in generated sitemap output.</item>
-            <item>Improved sitemap cache filtering so old invalid URLs are skipped before XML rendering.</item>
+            <item>Fixed JED-ready visible component naming.</item>
+            <item>Reduced JAMSS false-positive risk in the administrator sitemap controller.</item>
         </fix>
         <language>
-            <item>Updated English and Turkish administrator language files, including dashboard support copy.</item>
-            <item>Updated package and system plugin SYS language descriptions.</item>
+            <item>Updated English and Turkish administrator language files with JT Sitemap naming.</item>
+            <item>Improved administrator interface strings.</item>
         </language>
         <addition>
-            <item>Added dashboard support box with JoomTheme website and support email.</item>
-            <item>Added smart SEO priority handling for products, documentation, contact/about and policy pages.</item>
-            <item>Added default SEO exclusions for search, authentication, administrative and non-indexable output URLs.</item>
-            <item>Added Joomla update server and changelog metadata for JED-ready distribution.</item>
+            <item>Added component Permissions tab support.</item>
+            <item>Added ACL action descriptions for Configure ACL, Configure Options and Access Administration Interface.</item>
+            <item>Added schema placeholder for version 1.0.12.</item>
         </addition>
         <change>
-            <item>Package manifest now advertises the public update server and changelog URL.</item>
+            <item>Updated component manifest version and creationDate metadata.</item>
+            <item>Changed visible component name to JT Sitemap.</item>
         </change>
         <note>
-            <item>After updating, purge the sitemap cache and rebuild the sitemap from the component dashboard.</item>
+            <item>After updating, open the component dashboard and rebuild the sitemap.</item>
         </note>
     </changelog>
     <changelog>
         <element>jtsitemap</element>
         <type>plugin</type>
-        <version>1.0.7</version>
+        <version>1.0.12</version>
         <fix>
-            <item>Prevented administrator and raw com_content fallback URLs from appearing in generated sitemap output.</item>
-            <item>Improved sitemap cache filtering so old invalid URLs are skipped before XML rendering.</item>
+            <item>Fixed JED-ready visible system plugin naming.</item>
         </fix>
         <language>
-            <item>Updated English and Turkish administrator language files, including dashboard support copy.</item>
-            <item>Updated package and system plugin SYS language descriptions.</item>
+            <item>Updated English and Turkish system plugin language files with JT Sitemap naming.</item>
+            <item>Updated system plugin SYS language descriptions.</item>
         </language>
         <addition>
-            <item>Added dashboard support box with JoomTheme website and support email.</item>
-            <item>Added smart SEO priority handling for products, documentation, contact/about and policy pages.</item>
-            <item>Added default SEO exclusions for search, authentication, administrative and non-indexable output URLs.</item>
-            <item>Added Joomla update server and changelog metadata for JED-ready distribution.</item>
+            <item>Added automatic plugin activation through the package installer script.</item>
         </addition>
         <change>
-            <item>Package manifest now advertises the public update server and changelog URL.</item>
+            <item>Updated system plugin manifest version and creationDate metadata.</item>
+            <item>Changed visible plugin name to System - JT Sitemap.</item>
         </change>
         <note>
-            <item>After updating, purge the sitemap cache and rebuild the sitemap from the component dashboard.</item>
+            <item>Keep the System - JT Sitemap plugin enabled for the dynamic /sitemap.xml endpoint.</item>
         </note>
     </changelog>
 </changelogs>

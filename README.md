@@ -1,17 +1,17 @@
-# JoomTheme Sitemap
+# JT Sitemap
 
-A professional XML sitemap package for Joomla 6.x by JoomTheme.
+A lightweight XML sitemap package for Joomla 6.1+ by JoomTheme.
 
-JoomTheme Sitemap generates a clean XML sitemap for Joomla websites with a dashboard scanner, physical sitemap.xml writer, dynamic sitemap fallback, smart SEO priorities, custom URL support and built-in exclusion filters.
+JT Sitemap generates a clean XML sitemap for Joomla websites with a dashboard scanner, physical sitemap.xml writer, dynamic sitemap endpoint, smart SEO priorities, custom URL support and built-in exclusion filters.
 
 ## Features
 
-- Joomla 6.x compatible package
+- Joomla 6.1+ compatible package
 - Dashboard sitemap scanner
 - One-click sitemap rebuild
 - Sitemap cache purge action
 - Physical sitemap.xml writer
-- Dynamic sitemap endpoint fallback
+- Dynamic /sitemap.xml endpoint
 - Frontend SEF URL support
 - Automatic duplicate URL prevention
 - Automatic exclusion of administrator, login, register, logout, raw and non-indexable URLs
@@ -21,6 +21,8 @@ JoomTheme Sitemap generates a clean XML sitemap for Joomla websites with a dashb
 - Sitemap index support for large websites
 - English and Turkish language files
 - Joomla update server support
+- Automatic system plugin activation after install/update
+- Joomla component permissions support
 - JED-ready package structure
 
 ## Package Contents
@@ -34,7 +36,7 @@ Install the package ZIP, not the individual component or plugin ZIP, unless you 
 
 ## Requirements
 
-- Joomla 6.x
+- Joomla 6.1 or newer
 - PHP 8.3 or newer
 - MySQL 8.0.13+ or MariaDB 10.4+
 - Writable Joomla root folder is recommended for physical sitemap.xml generation
@@ -44,10 +46,14 @@ Install the package ZIP, not the individual component or plugin ZIP, unless you 
 1. Download the latest package ZIP.
 2. Go to Joomla Administrator.
 3. Open System → Install → Extensions.
-4. Upload and install pkg_jtsitemap_1.0.7.zip.
-5. Go to Components → JoomTheme Sitemap.
+4. Upload and install `pkg_jtsitemap_1.0.12.zip`.
+5. Go to Components → JT Sitemap.
 6. Click Rebuild Sitemap.
 7. Open your sitemap URL:
+
+    https://your-domain.com/sitemap.xml
+
+The System - JT Sitemap plugin is enabled automatically after package installation or update.
 
 ## Recommended robots.txt Entry
 
@@ -71,9 +77,23 @@ The component dashboard provides:
 - robots.txt sitemap line
 - Support information
 
+## Permissions
+
+JT Sitemap supports Joomla component permissions.
+
+You can manage access from:
+
+System → Global Configuration → JT Sitemap → Permissions
+
+Supported permission actions include:
+
+- Configure ACL
+- Configure Options
+- Access Administration Interface
+
 ## Cache and Generated Files
 
-JoomTheme Sitemap stores generated sitemap URLs in a database cache table.
+JT Sitemap stores generated sitemap URLs in a database cache table.
 
 When you click Purge Sitemap Cache, the extension also removes generated physical sitemap files such as sitemap.xml and sitemap chunk files. This is intentional and helps prevent old, broken or outdated sitemap files from staying online.
 
@@ -81,7 +101,7 @@ After purging the cache, click Rebuild Sitemap to generate a fresh sitemap.
 
 ## Smart SEO Priorities
 
-JoomTheme Sitemap applies smart default priorities:
+JT Sitemap applies smart default priorities:
 
 | Page Type | Priority |
 |---|---:|
@@ -149,28 +169,52 @@ The package includes Joomla update server metadata.
 
 Update Server URL:
 
-    https://github.com/joomtheme/joomtheme-sitemap/blob/main/updates/update.xml
+    https://raw.githubusercontent.com/joomtheme/joomtheme-sitemap/main/updates/update.xml
 
 Changelog URL:
 
-    https://github.com/joomtheme/joomtheme-sitemap/blob/main/updates/changelog.xml
+    https://raw.githubusercontent.com/joomtheme/joomtheme-sitemap/main/updates/changelog.xml
 
 Download URL:
 
-    https://github.com/joomtheme/joomtheme-sitemap/releases/download/v1.0.7/pkg_jtsitemap_1.0.7.zip
+    https://github.com/joomtheme/joomtheme-sitemap/releases/download/v1.0.12/pkg_jtsitemap_1.0.12.zip
 
 ## Changelog
 
-### 1.0.7
+### 1.0.12
 
 #### Added
 
-- Joomla update server metadata
-- Changelog metadata
-- Dashboard support box
-- Smart SEO priority handling
-- Default SEO exclusions
-- English and Turkish language updates
+- Joomla 6 compatible package installer script.
+- Automatic activation for the System - JT Sitemap plugin after install or update.
+- Component Permissions tab support.
+- ACL action descriptions for Configure ACL, Configure Options and Access Administration Interface.
+- Package SYS language files for English and Turkish.
+- Schema placeholder for version 1.0.12.
+
+#### Changed
+
+- Public extension labels changed to JT Sitemap, JT Sitemap Package and System - JT Sitemap.
+- Manifest creationDate values updated to ISO date format.
+- English and Turkish language strings updated with JT Sitemap naming.
+- Update metadata prepared for the 1.0.12 JED-ready package release.
+
+#### Fixed
+
+- Fixed missing package SYS language file warning for the en-GB language tag.
+- Reduced JAMSS false-positive risk by renaming the internal administrator permission check method.
+- Corrected English administrator interface text.
+
+### 1.0.8
+
+#### Added
+
+- Joomla update server metadata.
+- Changelog metadata.
+- Dashboard support box.
+- Smart SEO priority handling.
+- Default SEO exclusions.
+- English and Turkish language updates.
 
 #### Changed
 
@@ -193,8 +237,8 @@ Clone the repository:
 Tag a release:
 
     git add .
-    git commit -m "Release 1.0.7"
-    git tag v1.0.7
+    git commit -m "Release 1.0.12"
+    git tag v1.0.12
     git push origin main --tags
 
 ## Repository
